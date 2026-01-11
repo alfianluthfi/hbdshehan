@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe6f0, #ffd1e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+/* BOOK */
+.book {
+    background: white;
+    width: 360px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(255,105,180,0.35);
+    text-align: center;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: #ff4d94;
+}
+
+/* PAGE */
+.page {
+    perspective: 1000px;
+}
+
+.flip {
+    animation: flipPage 0.7s ease;
+}
+
+.page img,
+.page video {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.page p {
+    margin-top: 15px;
+    font-size: 1.05em;
+    color: #555;
+}
+
+/* BUTTON */
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4d94;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1f7a;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* FLIP EFFECT */
+@keyframes flipPage {
+    from {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0);
+        opacity: 1;
+    }
+}
+
+/* CONFETTI */
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* COVER */
+.cover {
+    height: 360px;
+    background: linear-gradient(135deg, #ff8fc7, #ffc1dc);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.4);
+    position: relative;   /* ⬅️ JANGAN absolute */
+    z-index: 1;
+}
+
+
+.page img, 
+.page video { 
+    position: relative; 
+    z-index: 2; 
+}
+.cover h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.cover p {
+    margin: 5px 0;
+}
+
+.cover h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.cover span {
+    margin-top: 15px;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+#choice {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; /* kiri - kanan */
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+#choice {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; /* kiri - kanan */
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+    
+#choice button:hover { 
+        background: #ff1f7a; 
+        transform: scale(1.05); 
+}
+
+#restartBtn {
+    background: #ff9acb;
+}
+
+#finishBtn {
+    background: #ff4d94;
+}
+
+
+
+#textOnly {
+    height: 360px;                 /* sama tinggi foto */
+    padding: 25px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;       /* ⬅️ mulai dari atas */
+    justify-content: center;
+
+    overflow-y: auto;              /* ⬅️ SCROLL */
+    scrollbar-width: thin;         /* Firefox */
+}
+
+/* scrollbar cantik (Chrome) */
+#textOnly::-webkit-scrollbar {
+    width: 6px;
+}
+#textOnly::-webkit-scrollbar-thumb {
+    background: #ff9acb;
+    border-radius: 10px;
+}
+
+#textOnly p {
+    font-size: 1.05em;             /* ⬅️ lebih kecil biar muat */
+    color: #ff4d94;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0;
+
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#textOnly::after {
+    content: "";
+    position: sticky;
+    bottom: 0;
+    display: block;
+    height: 30px;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+#textOnly p {
+    font-family: 'Georgia', 'Segoe UI', serif;
+}
+
