@@ -10,7 +10,7 @@ const youtubeVideoId = "8paS7HsItj67re_3A6l0Uw"; // GANTI ID YOUTUBE KAMU
 const pages = [
     { img: "sts1.jpg", text: "Selamat bertambah usia orang favoritku, semoga hal baik selalu menyertaimu ya sayang" },
     { img: "sts2.jpg", text: "Mungkin belum banyak cerita yang disampaikan ke aku, tapi sejauh ini gada rasa sedikitpun aku untuk ga bangga sama sayang" },
-    { img: "sts3.jpg", text: "Entah seberat apapun beban di pundakmu dan entah seberisik apapun dikepalamu, semoga tahun mampukan dan mudahkan ya sayang" },
+    { img: "sts3.jpg", text: "Entah seberat apapun beban di pundakmu dan entah seberisik apapun dikepalamu, semoga tuhan mampukan dan mudahkan ya sayang" },
     { img: "sts4.jpg", text: "Maaf ya setiap diajak makan, diajak jalan jalan selalu sederhana"},
     { img: "sts5.jpg", text: "Ini apalagii, cape ya pegel yaa kalau diajak motoran maaf yaa" },
     { img: "sts6.jpg", text: "Foto favorit aku bersama sayangku dan shanumm" },
@@ -197,4 +197,5 @@ function animateHearts() {
         }
     });
     requestAnimationFrame(animateHearts);
+
 }
