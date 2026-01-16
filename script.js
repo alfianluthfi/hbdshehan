@@ -17,7 +17,9 @@ const pages = [
     { img: "sts7.jpg", text: "Senang sekali rasanya di kehidupan yang hanya sekali ini bisa berkesempatan bertemu dengan orang selucu inii" },
     { img: "sts8.jpg", text: "Kalo kata Ustadz Adi Hidayat, selagi Allah masih memberiku cinta untuk mencintainya, maka selama itu aku akan menyukainya"},
     { img: "sts9.jpg", text: "Sengaja mb ecanya ga diilangin, sejauh ini inilah orang yang disengaja maupun tidak disengaja bisa sedeket ini sama sayang"},
-    { img: "sts10.jpg", text: "Fokus yaa, soalnya abis ini bakal ada long text puaanjangg bangettt. Semoga berkenan untuk dibaca dan ga kelewat sekata pun" }
+    { img: "sts10.jpg", text: "Cantik banget yaa bunganyaa, jumlah mawarnya penuh filosif. Sukak bangett pokoknyaaa"},
+    { img: "sts11.jpg", text: "Happy Birthday yaa sayangyaa akuu, semestanya akuuu. Ily in every universe"},
+    { img: "sts12.jpg", text: "Fokus yaa, soalnya abis ini bakal ada long text puaanjangg bangettt. Semoga berkenan untuk dibaca dan ga kelewat sekata pun" }
 ];
 
 /* =====================
